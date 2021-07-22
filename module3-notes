@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          	<div class="navbar-brand">
+            	<a href="index.html"><h1>Food, LLC</h1></a>
+          	</div>
+
+          	 <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target=".navbar-collapse #collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+             </button>
+      		
+        	<div id="collapsable-nav" class="collapse navbar-collapse">
+           	  <ul id="nav-list" class="nav navbar-nav visible-xs">
+              	<li>
+              		<a href="#c"> Chicken</a>
+              	</li>
+              	<li>
+              		<a href="#b">Beef</a>
+              	</li>
+              	<li>
+              		<a href="#s"> Sushi</a>
+              	</li>
+            
+              </ul><!-- #nav-list -->
+        	</div><!-- .collapse .navbar-collapse -->
+        </div> <!--.navbar header-->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+  <h1 class="text-center">Our Menu</h1>
+  <div class="container-fluid col-xs-12">
+  		<p class="text-center">Chicken.
+  		<br>Create a single really tall section that will use the Bootstrap Grid and take up the entire width of the browser window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall, you can either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be tall enough to cause scrolling down to be required to view the bottom of the section. Make sure its background color is set to distinguish it from the rest of the content. (Hint: don't forget to have an element with a class='container' or class='container-fluid' wrapping your grid. Remember that to have the grid do something "always", i.e., no matter what browser window size, use the col-xs-... classes. In this case, since we want the section to take up the entire row, use col-xs-12.)
+  		</p>
+  </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+CSS
+
+#header-nav {
+	background-color: #654321;
+	border-radius: 0;
+	border: 0;
+	margin-bottom: 2em;
+}
+.navbar-brand {
+	padding-top: 15px; 
+}
+.navbar-brand h1 {
+	font-family: 'Lora', serif;
+	color: #ffc107;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px  #000;
+	float: left;
+}
+
+.container {
+	margin-left: 5px;
+}
+#nav-list {
+	margin-top: 10;
+}
+#nav-list a {
+	color: #333;
+	text-align: center;
+	font-size: 1.8em;
+}
+#nav-list a:hover {
+	background: #e7e7e7;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+	clear: both;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+  p {
+	height: 1300px;
+	background-color: #555777; 
+	padding-top: 10px;
+	margin: .5em;
+	font-size: 30px;
+	font-weight: bold;
+}
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	p {
+	height: 1300px;
+	background-color: #555777; 
+	padding-top: 10px;
+	margin: 1em;
+	font-size: 30px;
+	font-weight: bold;
+}
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+}
+  
+  /* End Header */
+  p {
+	height: 1300px;
+	background-color: #555777; 
+	padding-top: 10px;
+	margin: 1.5em;
+	font-size: 30px;
+	font-weight: bold;
+	}
+}

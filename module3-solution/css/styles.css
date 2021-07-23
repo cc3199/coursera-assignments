@@ -17,8 +17,9 @@
 }
 
 /********** Large and Medium devices only **********/
-@media (min-width: 576px) {
+@media (min-width: 767px) {
     .nav-item{
     visibility:hidden;
     }
+
 }
